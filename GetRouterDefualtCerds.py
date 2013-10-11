@@ -6,6 +6,12 @@ import urllib,urllib2
 import sys
 from bs4 import BeautifulSoup
 
+if len(sys.argv) >2 or len(sys.argv)<2:
+	print '''[*]Please Use This Script in Ethical Hacking or Educational purpose
+[*]Error: Too many inputs
+[*]Use This Script Like That #ScriptName.py RouterName'''
+	sys.exit(0)
+
 
 url = "http://routerpasswords.com"
 Device = sys.argv[1].upper()
